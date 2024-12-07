@@ -1,5 +1,8 @@
-export class Employee {
+import { Party } from '../party';
+
+export class Employee extends Party {
   constructor(name, id, monthlyCost) {
+    super();
     this._name = name;
     this._id = id;
     this._monthlyCost = monthlyCost;
