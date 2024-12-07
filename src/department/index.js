@@ -1,5 +1,8 @@
-export class Department {
+import { Party } from '../party';
+
+export class Department extends Party {
   constructor(name, staff) {
+    super();
     this._name = name;
     this._staff = staff;
   }
