@@ -11,10 +11,6 @@ export class Employee extends Party {
     return this._monthlyCost;
   }
 
-  get name() {
-    return this._name;
-  }
-
   get id() {
     return this._id;
   }
