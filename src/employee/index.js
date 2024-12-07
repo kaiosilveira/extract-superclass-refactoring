@@ -14,8 +14,4 @@ export class Employee extends Party {
   get id() {
     return this._id;
   }
-
-  get annualCost() {
-    return this._monthlyCost * 12;
-  }
 }

@@ -6,4 +6,8 @@ export class Party {
   get name() {
     return this._name;
   }
+
+  get annualCost() {
+    return this.monthlyCost * 12;
+  }
 }

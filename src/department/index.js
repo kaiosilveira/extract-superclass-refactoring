@@ -17,8 +17,4 @@ export class Department extends Party {
   get headCount() {
     return this._staff.length;
   }
-
-  get annualCost() {
-    return this.monthlyCost * 12;
-  }
 }
