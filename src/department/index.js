@@ -10,7 +10,7 @@ export class Department extends Party {
     return this._staff.slice();
   }
 
-  get totalMonthlyCost() {
+  get monthlyCost() {
     return this.staff.map(e => e.monthlyCost).reduce((sum, cost) => sum + cost);
   }
 
@@ -19,6 +19,6 @@ export class Department extends Party {
   }
 
   get totalAnnualCost() {
-    return this.totalMonthlyCost * 12;
+    return this.monthlyCost * 12;
   }
 }

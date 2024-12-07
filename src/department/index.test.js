@@ -16,7 +16,7 @@ describe('Department', () => {
   it('should calculate the total monthly cost', () => {
     const staff = [new Employee('Kaio', 1, 1000), new Employee('Enzo', 1, 1500)];
     const department = new Department('Engineering', staff);
-    expect(department.totalMonthlyCost).toBe(2500);
+    expect(department.monthlyCost).toBe(2500);
   });
 
   it('should calculate the head count', () => {
