@@ -28,6 +28,6 @@ describe('Department', () => {
   it('should calculate the total annual cost', () => {
     const staff = [new Employee('Kaio', 1, 1000), new Employee('Enzo', 1, 1500)];
     const department = new Department('Engineering', staff);
-    expect(department.totalAnnualCost).toBe(30000);
+    expect(department.annualCost).toBe(30000);
   });
 });
